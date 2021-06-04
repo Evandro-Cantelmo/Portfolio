@@ -1,0 +1,151 @@
+html{
+    scroll-behavior: smooth;
+    
+}
+body{
+    display: flexbox;
+    background: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+    text-align: center;
+    margin: 0;
+}
+section{
+    padding-top: 80px;
+
+}
+
+/*-----Cabeçalho-----*/
+
+.hero{
+    background-image: linear-gradient(to top,rgba(50,0, 50, 1), transparent), url(../image/header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 600px;
+    border-top: solid black 0.1px;
+    color:white;
+}
+.hero h1{
+    display: inline-block;
+    margin-top: 150px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 90px;
+    animation: forwards shadow 3s;
+}
+
+@keyframes shadow{
+    from{
+        color:rgba(255, 255, 255, 0.8);
+    }
+    to{
+        text-shadow: 0px 1px 30px rgb(255, 0, 100);
+    }
+}
+.hero nav{
+    background-color: rgba(50,0, 50, 0.3) ;
+}
+.hero nav ul{
+    text-align: center;
+    margin-top: 0;
+    padding: 10px ;
+    text-transform: uppercase;
+    
+}
+.hero nav li{
+    display: inline;
+    padding: 20px;
+    list-style: none;
+    font-size: 18px;
+}
+.hero nav a{
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.5);
+    transition: all 0.5s linear;
+}
+.hero nav a:hover{
+    color: white;
+}
+
+/*-----Sobre-----*/
+
+.main-section-about{
+    margin: 0 20%;
+}
+.main-section-about img{
+    border-radius: 50%;
+    width: 200px;
+    transition: box-shadow 0.5s linear;
+}
+.main-section-about img:hover{
+    box-shadow: 0px 0px 100px 10px blueviolet, 0 0 200px 20px blue;
+}
+
+/*-----Projetos-----*/
+
+.main-section-projects{
+    background: url(../image/project.jpg) no-repeat center center fixed;
+    height: 600px;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.main-section-projects h2{
+    padding-top: 50px;
+}
+
+.card{
+    display: inline-block;
+    margin-top: 150px;
+    color: white;
+    filter: grayscale(100%);
+    transition: all 0.3s linear;
+    color: white;
+    text-transform: uppercase;
+    animation: go-back 1s;
+}
+@keyframes go-back {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.card-1 .card-2 .card-3{
+    color: white;
+    transition: all 0.3s linear;
+}
+.card-1:hover{
+    color:orange;
+}
+.card-2:hover{
+    color:yellow;
+}
+.card-3:hover{
+    color: violet;
+}
+.card:hover{
+    filter: grayscale(0%);
+
+}
+
+/*-----Contatos-----*/
+
+.ul-icons{
+    font-size: 30px;
+    text-align: center;
+    margin-right: 40px;
+    text-decoration: none;
+    text-transform: none;
+
+}
+.ul-icons li{
+    display: inline;
+}
+.ul-icons li a{
+    color: white;
+}
+footer{
+    background: blueviolet;
+    padding:2px;
+}

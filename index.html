@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Portfólio</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Evandro Cantelmo">
+        <meta name="description" content="Portfólio de Evandro Cantelmo">
+        <meta name="keywords" content="Portfólio, CSS, HTML">
+        <script src="https://kit.fontawesome.com/1f32bddf42.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="Css/style.css">
+
+    </head>
+    <body>
+
+        <!--Cabeçalho-->
+        <header class="hero">
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <h1>Bem-vindo</h1>
+        </header>
+
+        <!--Conteúdo-->
+        <main class="main-content">
+            <!--Conteúdo Sobre-->
+            <section>
+                <article class="main-section-about">
+                    <h2 id="sobre">Sobre</h2>
+                    <img src="image/avatar.jpg" alt="Foto de perfil">
+                    <h3>Olá, sou <b>Evandro Cantelmo</b></h3>
+                    <p>Tenho 21 anos, estou cursando análise e desenvolvimento de sistemas, e estou fazendo curso de
+                        <strong>HTML</strong>, <strong>CSS</strong> e <strong>JAVASCRIPT</strong>. Também tenho conhecimento em <strong>PYTHON</strong> e <strong>C#</strong></p>
+                    </p>
+                </article>
+            </section>
+
+            <!--Conteúdo Projetos-->
+            <section>
+                <article class="main-section-projects">
+                    <h2 id="projetos">Projetos</h2>
+                    <div class="card card-1">
+                        <a href="#" onclick="Myalert()">
+                            <img src="image/js_css_html.png" alt="Logo HTML, CSS e JS" height="200px">
+                        </a>
+                        <p><b>Web</b></p>
+                    </div>
+                    <div class="card card-2">
+                        <a href="#" onclick="Myalert()">
+                            <img src="image/Python.png" alt="Logo Python" height="200px">
+                        </a>
+                        <p><b>Python</b></p>
+                    </div>
+                    <div class="card card-3">
+                        <a href="#" onclick="Myalert()">
+                            <img src="image/Csharp.png" alt="Logo C-Sharp" height="200px">
+                        </a>
+                        <p><b>C#</b></p>
+                    </div>
+                    <script>
+                        function Myalert(){
+                            alert("Ainda em constução...");
+                        }
+                    </script>
+                </article>
+            </section>
+
+            <!--conteúdo Projetos-->
+            <section>
+                <article class="main-section-contact">
+                    <h2 id="contato">Contato</h2>
+                    <div>
+                        <h5>E-mail</h5>
+                        <p>evandrocantelmo@gmail.com</p>
+                        <h5>Redes sociais</h5>
+                        <ul class="ul-icons">
+                            <li><a href="https://linkedin.com/in/evandro-cantelmo" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="https://github.com/Evandro-Cantelmo" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <!--Rodapé-->
+        <footer>
+            <p>Feito por Evandro Cantelmo</p>
+        </footer>
+    </body>
+</html>
